@@ -14,6 +14,9 @@
 		D260ADF31A1AA0340088B130 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D260ADF21A1AA0340088B130 /* Images.xcassets */; };
 		D260ADF61A1AA0340088B130 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D260ADF41A1AA0340088B130 /* LaunchScreen.xib */; };
 		D260AE021A1AA0340088B130 /* DrawMailerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D260AE011A1AA0340088B130 /* DrawMailerTests.m */; };
+		D260AE0D1A1AA0900088B130 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D260AE0C1A1AA0900088B130 /* CustomView.m */; };
+		D260AE0F1A1AA2200088B130 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D260AE0E1A1AA2200088B130 /* MessageUI.framework */; };
+		D260AE111A1AAAE50088B130 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D260AE101A1AAAE50088B130 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		D260ADFB1A1AA0340088B130 /* DrawMailerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawMailerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D260AE001A1AA0340088B130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D260AE011A1AA0340088B130 /* DrawMailerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawMailerTests.m; sourceTree = "<group>"; };
+		D260AE0B1A1AA0900088B130 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		D260AE0C1A1AA0900088B130 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		D260AE0E1A1AA2200088B130 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D260AE101A1AAAE50088B130 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D260AE111A1AAAE50088B130 /* QuartzCore.framework in Frameworks */,
+				D260AE0F1A1AA2200088B130 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,8 @@
 		D260ADD91A1AA0340088B130 = {
 			isa = PBXGroup;
 			children = (
+				D260AE101A1AAAE50088B130 /* QuartzCore.framework */,
+				D260AE0E1A1AA2200088B130 /* MessageUI.framework */,
 				D260ADE41A1AA0340088B130 /* DrawMailer */,
 				D260ADFE1A1AA0340088B130 /* DrawMailerTests */,
 				D260ADE31A1AA0340088B130 /* Products */,
@@ -89,6 +100,8 @@
 				D260ADF21A1AA0340088B130 /* Images.xcassets */,
 				D260ADF41A1AA0340088B130 /* LaunchScreen.xib */,
 				D260ADE51A1AA0340088B130 /* Supporting Files */,
+				D260AE0B1A1AA0900088B130 /* CustomView.h */,
+				D260AE0C1A1AA0900088B130 /* CustomView.m */,
 			);
 			path = DrawMailer;
 			sourceTree = "<group>";
@@ -168,6 +181,7 @@
 				TargetAttributes = {
 					D260ADE11A1AA0340088B130 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = FT5TU5KEM8;
 					};
 					D260ADFA1A1AA0340088B130 = {
 						CreatedOnToolsVersion = 6.1;
@@ -220,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D260ADEE1A1AA0340088B130 /* ViewController.m in Sources */,
+				D260AE0D1A1AA0900088B130 /* CustomView.m in Sources */,
 				D260ADEB1A1AA0340088B130 /* AppDelegate.m in Sources */,
 				D260ADE81A1AA0340088B130 /* main.m in Sources */,
 			);
@@ -344,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrawMailer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DrawMailer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +429,7 @@
 				D260AE071A1AA0340088B130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D260AE081A1AA0340088B130 /* Build configuration list for PBXNativeTarget "DrawMailerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +438,7 @@
 				D260AE0A1A1AA0340088B130 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
